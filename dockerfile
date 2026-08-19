@@ -20,4 +20,6 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 EXPOSE 8501
 
 # App chalane ki command (app.py ke liye)
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["python3", "-m", "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+
